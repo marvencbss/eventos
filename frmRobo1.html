@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="http://robohash.org" method="get">
+        Palavra: <input type="text">
+        <input type="submit" value="Gerar">
+        </form>
+    
+        <img src="https://robohash.org/oioioi">
+</body>
+<script>
+    let palavra = document.querySelector('#txPalavra');
+    let botao = document.querySelector('#btGerar');
+    let imgRobo = document.querySelector('img');
+
+    botao.addEventListener('click', gerarRobo)
+
+    function gerarRobo() {
+        imgRobo.src = "https://robohash.org/" + palavra.value;
+    }
+</script>
+</html>
