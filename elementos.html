@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span {
+            background-color: aqua;
+            width: 50px;
+            height: 50px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- <em>oi, oi, oi</em>
+    <strong>oi, oi, oi</strong> -->
+</body>
+<script>
+    // let elemP = document.querySelector('p');
+    // elemP.innerText = "he, he, he";
+    //elemP.innerHTML=<em>oi, oi, oi</em>
+    //<strong>oi, oi, oi</strong>
+
+    for(let x=0; x<100; x++) {
+    let elemSpan = document.createElement('span');
+    elemSpan.innerHTML=`<b>${x} </b>`
+    document.body.appendChild(elemSpan)
+    }
+
+</script>
+</html>
