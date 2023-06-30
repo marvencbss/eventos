@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Palavra: <input id='txPalavra' type="text">
+    <input id='btGerar' type="button" value="Gerar">
+
+    <img src="">
+
+</body>
+<script>
+    let palavra = document.querySelector('#txPalavra');
+    let botao = document.querySelector('#btGerar');    
+    let imgRobo = document.querySelector('img');
+
+
+    botao.addEventListener('click', gerarRobo)
+
+    function gerarRobo() {
+        imgRobo.src = "https://robohash.org/"+palavra.value;
+        
+        
+    }
+
+</script>
+</html>
