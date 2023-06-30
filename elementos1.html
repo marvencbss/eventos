@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width='', initial-scale=1.0">
+    <title>Document</title>
+<style>
+    body {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: rgb(32,32,32);
+    }
+    span {
+        background-color: aqua;
+        border-radius: 25px;
+        width: 50px;
+        height: 50px;
+        margin: 10px;
+    }
+</style>
+</head>
+<body>
+    
+</body>
+<script>
+
+    for (let x=0; x<112; x++) {
+        let q = document.createElement('span');
+        document.body.appendChild(q);
+        
+    }
+
+    window.setInterval(mudaCor,50);
+
+    function mudaCor() {
+        let quadrados = Array.from(document.querySelectorAll('span'));
+        console.log(quadrados);
+        let q = quadrados[Number.parseInt(Math.random()*quadrados.length)];
+        let r = Math.random()*255;
+        let g = Math.random()*255;
+        let b = Math.random()*255;
+        q.style.backgroundColor=`rgb(${r}, ${g}, ${b})`
+    }
+</script>
+</html>
